@@ -1,0 +1,80 @@
+﻿#head-division
+{
+     background-color:rgb(25,57,71);
+     color : white;
+     text-align:left;
+     
+}
+header{
+    padding:30px;
+}
+#main-division
+{
+  border: 1px solid lightgray;
+  width : 700px;
+  height : 100%;
+  margin-left:400px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.textbox
+{
+ width :83%;
+}
+.text-box
+{
+    width:40%;
+   
+}
+#form-division
+{
+height:100%;
+width:100%;
+padding:20px;
+
+}
+#textBoxSmall {
+    width: 15%;
+}
+
+#instructionParagraph
+{
+    width:85%;
+}
+#lastname
+{
+    margin-left:220px;
+}
+#label-state {
+    margin-left: 260px;
+}
+#label-country {
+    margin-left: 220px;
+}
+#header-paragraph{
+    margin-top:-20px;
+}
+#body-divison 
+{
+    margin-top:-30px;
+    height:100%;
+    width:100%;
+    display:block;
+background-color:darkseagreen;
+}
+
+#sign{
+    width:100px;
+    border-block-end:groove;
+    margin-top:0px;
+}
+#phonenumber-label
+{
+    
+    margin-left:250px;
+}
+#sign-image
+{
+    width:70px;
+    height:70px;
+   
+}
