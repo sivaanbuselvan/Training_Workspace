@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
    
-  <link  type="text/css" rel="stylesheet" href="Form.css"/>    
+  <link rel="stylesheet" href="Form.css"/>    
 </head>
 <body>
     <div id="main-division">
@@ -16,51 +16,61 @@
         
             <div id="form-division">
                 <form id="myform" method="post" action="#">
-                    <div class="fullname-division">
-                        <label for="full name">Full Name</label> <br />
-                        <input type="text" name="firstName" class="text-box" />
-                        <input type="text" name="lastName" class="text-box" /> <br />
+                    
+                        <label for="firstName" id="fullname"><b>Full Name</b></label>
+                        <input type="text" name="firstName" class="text-box-fullname" id="firstName"/>
+                        <input type="text" name="lastName" class="text-box-fullname" id="last-Name" />
                         <label for="firstname" style="color:lightgray">firstname</label>
-                        <label for="lastname" id="lastname" style="color:lightgray">last name</label> <br/><br />
-                    </div>
-                    <label for="email">Email</label>
-                    <label for="mobileNumber" id="phonenumber-label">Phone Number</label><br />
-                    <input type="email" name="email" class="text-box" />
-                    <input type="number" name="mobileNumber" class="text-box"> <br />
-                    <label for="email" style="color:lightgray">example@example.com</label><br /><br />
+                        <label for="lastname" id="lastname" style="color:lightgray">last name</label> 
+                    
+                    
+                    <label for="email" id="email-label"><b>E-mail</b></label>
+                    <label for="mobileNumber" id="phonenumber-label"><b>Phone Number</b></label>
+                    <input type="email" name="email" class="text-box-contact" id="email" />
+                    <input type="number" name="mobileNumber" class="text-box-contact" id="mobileNumber">
+                    <label for="email" style="color:lightgray">example@example.com</label>
 
-                    <label for="companyName">Company Name</label>
-                    <input type="text" name="companyName" class="textbox" /><br /><br />
+                    <label for="companyName" id="company-label"><b>Company Name</b></label>
+                    <input type="text" name="companyName" class="textbox" id="companyName" />
 
-                    <label for="userAddress">Address</label><br />
-                    <input type="text" name="userAddress" class="textbox" /><br />
-                    <label for="userAddress" style="color:lightgray">street Address</label><br />
+                    <label for="userAddress" id="address-label"><b>Address</b></label>
+                    <input type="text" name="userAddress" class="textbox" id="userAddress" />
+                    <label for="userAddress" style="color:lightgray">street Address</label>
 
-                    <input type="text" name="city" class="text-box" />
-                    <input type="text" name="state/province" class="text-box" /><br />
-                    <label for="city" style="color:lightgray">city</label> <label for="state/province" style="color:lightgray" id="label-state">state/province</label><br />
+                    <input type="text" name="city" class="text-box" id="cityName" />
+                    <input type="text" name="state-province" class="text-box" id="state-province" />
+                    <label for="city" style="color:lightgray">city</label> <label for="state/province" style="color:lightgray" id="label-state">state/province</label>
                     <input type="text" name="postal/zip" class="text-box" />
-                    <input type="text" name="country" class="text-box" /><br />
-                    <label for="postal/zip" style="color:lightgray">postal/zip</label> <label for="country" style="color:lightgray" id="label-country">country</label><br />
+                    <input type="text" name="country" class="text-box" id="country"/><br />
+                    <label for="postal/zip" style="color:lightgray">postal/zip</label> <label for="country" style="color:lightgray" id="label-country">country</label>
                     <p id="instructionParagraph">
-                        <b>How many will attend ?</b> <br />
+                        <b>How many will attend ?</b> 
+                    <p >
                         one ticket is <b>$50</b>.Full acess to workshop sessions,materials and food/drink<br />
                         possiblities.Make sure you enter correct amount!
                     </p>
-                    <label for="quantity">quantity</label> <input type="text" name="quantity" id="textBoxSmall" /> <label for="totalCount"<span style = "margin-left :20px"></span>total</label> <input type="number" name="totalCount" class="text-box" /><br /><br />
-                    <b>how did you hear about the workshop?</b><br /><br />
+                    </p>
+                    <div class="quantity-label" style="display:flex;">
+                        <label for="quantity">Quantity</label> <input type="text" name="quantity" id="textBoxSmall" /> <label for="totalCount"<span style = "margin-left :60px"></span>Total</label> <input type="number" name="totalCount" id="totalCount"/><br />
+                    </div>
+                       <p id="text-between"><b>how did you hear about the workshop?</b></p> 
+                   
+                    <div style=" display:flex; justify-content:start">
+                        <input type="radio" id="website" value="website" name="info"  class="radio-info"/>
+                        <label for="website" type="radio" class="radio-label">Website</label>
 
-                    <input type="radio" id="website" value="website" name="infos" class="radio-group" />
-                    <label for="website">website</label>
+                        <input type="radio" id="friends-colleague" value="friends-colleague" name="info"  class="radio-info" />
+                        <label for="friends-colleague" type="radio" class="radio-label">Friends-Colleague</label>
 
-                    <input type="radio" id="friends/colleague" value="friends/colleague" name="infos" class="radio-group" />
-                    <label>friends/colleague</label>
-
-                    <input type="radio" id="onlineSearch" value="onlineSearch" name="infos" class="radio-group" />
-                    <label for="onlineSearch">online Search</label>
-                    <p>Date:sep.30,2030</p>
+                        <input type="radio" id="onlineSearch" value="onlineSearch" name="info"  class="radio-info"/>
+                        <label for="onlineSearch" type="radio" class="radio-label" id="online-Search">Online Search</label>
+                    </div>
+                    <p><b>Date</b>:Sep.30,2030</p>
                     <img src="sign.jpg" alt="image is not get downloaded" id="sign-image" />
                     <p id="sign"></p>
+
+                    <div class="image"><img src="logo.png" alt="image is here"/></div>
+
                 </form>
             </div>
         </div>

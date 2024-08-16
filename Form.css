@@ -1,6 +1,6 @@
 ﻿#head-division
 {
-     background-color:rgb(25,57,71);
+    background-color:rgb(25,57,71);
      color : white;
      text-align:left;
      
@@ -18,22 +18,27 @@ header{
 }
 .textbox
 {
- width :83%;
+    
+ width :95%;
 }
-.text-box
+.text-box-fullname 
 {
-    width:40%;
-   
+    width: 45%;
+    margin-top: -10px;
+    box-sizing: border-box;
 }
 #form-division
 {
 height:100%;
 width:100%;
-padding:20px;
+padding:30px;
+background-color:rgba(249,249,249,.5);
+box-sizing:border-box;
 
 }
 #textBoxSmall {
-    width: 15%;
+    margin-left:10px;
+    width: 10%;
 }
 
 #instructionParagraph
@@ -42,25 +47,21 @@ padding:20px;
 }
 #lastname
 {
-    margin-left:220px;
+    margin-left:335px;
+    margin-top:-20px;
 }
 #label-state {
-    margin-left: 260px;
+    margin-top:-20px;
+    margin-left:335px;
 }
 #label-country {
-    margin-left: 220px;
+    margin-top:-20px;
+    margin-left: 335px;
 }
 #header-paragraph{
     margin-top:-20px;
 }
-#body-divison 
-{
-    margin-top:-30px;
-    height:100%;
-    width:100%;
-    display:block;
-background-color:darkseagreen;
-}
+
 
 #sign{
     width:100px;
@@ -69,12 +70,95 @@ background-color:darkseagreen;
 }
 #phonenumber-label
 {
-    
-    margin-left:250px;
+    margin-top:-20px;
+    margin-left:335px;
 }
 #sign-image
 {
     width:70px;
     height:70px;
    
+}
+#myform label
+{
+  display:block;
+}
+
+.text-box-contact {
+    width: 45%;
+    margin-top: -10px;
+    box-sizing: border-box;
+}
+.image {
+   
+    margin-left: 520px;
+    margin-top: -80px;
+}
+#email {
+    margin-top: -10px;
+}
+#email-label
+{
+margin-top:10px;
+}
+#company-label
+{
+    margin-top:10px;
+}
+#address-label
+{
+    margin-top:10px;
+}
+.text-box {
+    width: 45%;
+    margin-top: -10px;
+    box-sizing: border-box;
+}
+.radio-group
+{
+    display:inline;
+}
+input{
+    background-color:rgb(249,249,249);
+    border:1px solid lightgrey;
+    border-radius:5px;
+}
+#text-between 
+{
+    margin-top: 20px;
+}
+
+
+#totalCount{
+    margin-left:15px;
+}
+#last-Name
+{
+ margin-left:40px;
+}
+#mobileNumber
+{
+    margin-left:40px;
+
+}
+#state-province {
+    margin-left: 40px;
+}
+#country {
+    margin-left: 40px;
+}
+.radio-label
+{
+margin-left:5px;
+margin-top:-2px;
+}
+#friends-colleague
+{
+    margin-left:20px;
+}
+#onlineSearch {
+    margin-left: 20px;
+}
+#online-Search{
+    margin-left:10px;
 }
