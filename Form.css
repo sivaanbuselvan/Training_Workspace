@@ -13,19 +13,34 @@ header{
   border: 1px solid lightgray;
   width : 700px;
   height : 100%;
-  margin-left:400px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  margin : auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .textbox
 {
     
  width :95%;
 }
+.label-Down
+{
+    color:lightgrey;
+    display: inline;
+}
 .text-box-fullname 
 {
-    width: 45%;
+    
     margin-top: -10px;
     box-sizing: border-box;
+    display:inline;
+
+}
+#first-Name
+{
+  width:45%;
+}
+#last-Name
+{
+  width:45%;
 }
 #form-division
 {
@@ -36,7 +51,7 @@ background-color:rgba(249,249,249,.5);
 box-sizing:border-box;
 
 }
-#textBoxSmall {
+#text-Box-Small {
     margin-left:10px;
     width: 10%;
 }
@@ -45,17 +60,20 @@ box-sizing:border-box;
 {
     width:85%;
 }
-#lastname
-{
-    margin-left:335px;
-    margin-top:-20px;
+#label-last-name {
+    color: lightgrey;
+    margin-left: 335px;
+    margin-top: -20px;
 }
-#label-state {
+#label-state 
+{
+    color:lightgrey;
     margin-top:-20px;
     margin-left:335px;
 }
 #label-country {
-    margin-top:-20px;
+    color: lightgrey;
+    margin-top: -20px;
     margin-left: 335px;
 }
 #header-paragraph{
@@ -63,7 +81,7 @@ box-sizing:border-box;
 }
 
 
-#sign{
+#sign-Line{
     width:100px;
     border-block-end:groove;
     margin-top:0px;
@@ -89,7 +107,7 @@ box-sizing:border-box;
     margin-top: -10px;
     box-sizing: border-box;
 }
-.image {
+.picture-division {
    
     margin-left: 520px;
     margin-top: -80px;
@@ -127,10 +145,13 @@ input{
 {
     margin-top: 20px;
 }
+#label-Total{
+    margin-left : 60px;
+}
 
-
-#totalCount{
-    margin-left:15px;
+#total-Count
+{
+    margin-left:10px;
 }
 #last-Name
 {
@@ -161,4 +182,13 @@ margin-top:-2px;
 }
 #online-Search{
     margin-left:10px;
+}
+#radio-division {
+    display: flex;
+    justify-content: start
+}
+.quantity-label {
+    
+   display:flex;
+   
 }
