@@ -1,0 +1,86 @@
+﻿
+.main-division {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    opacity:90%;
+    color: white;
+    text-align: center;
+    padding:20px;
+}
+.calculations_division {
+    display:grid;
+    padding :20px ;
+    padding-bottom:50px;
+    row-gap:10px;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    color: blue;
+}
+#result{
+    border:1px solid black;
+    height:20px;
+    margin-top:8px;
+}
+#button_Result{
+    margin-top:-2px;
+}
+.odd_even_finder {
+    display: block;
+    color: darkmagenta;
+    width: 200px;
+    height: 170px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+#result_Paragraph {
+    border: 1px solid black;
+    height: 20px;
+    margin-top: 8px;
+    width:80px;
+    text-align:center;
+}
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    row-gap:20px;
+}
+.temperature_division {
+    color:darkgoldenrod;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+#in_Farenheit {
+    border: 1px solid black;
+    height: 20px;
+    margin-top: 8px;
+    width: 90px;
+    display:block;
+    text-align: center;
+    overflow:hidden;
+}
+#temperature_button
+{
+    margin-top : 10px;
+}
+#odd_even_button{
+    margin-top:10px;
+    
+}
+.loop_division {
+    margin-top:10px;
+    color: darkgoldenrod;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    background-color: floralwhite;
+}
+#loop_holder{
+    border:1px solid grey;
+    height:150px;
+    width:100%;
+    box-sizing:border-box;
+}
