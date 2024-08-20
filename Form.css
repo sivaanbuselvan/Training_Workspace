@@ -38,20 +38,22 @@ header{
 {
   width:45%;
 }
-#last-Name
+#last_Name
 {
   width:45%;
+  margin-left:30px;
 }
 #form-division
 {
 height:100%;
 width:100%;
 padding:30px;
+padding-bottom:20px;
 background-color:rgba(249,249,249,.5);
 box-sizing:border-box;
 
 }
-#text-Box-Small {
+#quantity_input {
     margin-left:10px;
     width: 10%;
 }
@@ -60,7 +62,7 @@ box-sizing:border-box;
 {
     width:85%;
 }
-#label-last-name {
+#last_name {
     color: lightgrey;
     margin-left: 335px;
     margin-top: -20px;
@@ -162,7 +164,7 @@ input{
     margin-left:40px;
 
 }
-#state-province {
+#state_province {
     margin-left: 40px;
 }
 #country {
@@ -191,4 +193,25 @@ margin-top:-2px;
     
    display:flex;
    
+}
+.submit_input {
+    margin-top: 30px;
+}
+.text-Box{
+    width : 96%;
+}
+#error_message {
+    display:inline;
+    margin-left:340px;
+}
+.error_message_division
+{   display:none;
+    position:fixed;
+    width: 200px;
+    height : 200px;
+}
+#info-Error{
+    display:inline;
+    margin-left:380px;
+
 }
