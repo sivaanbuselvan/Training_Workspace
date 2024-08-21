@@ -1,6 +1,6 @@
 ﻿/*This function is used to check whether the username is entered or not . By using onfocusout event and 
  retrieve the data  using the document by using the id and by using the regex to conform the pattern of the username */
-function check_FirstName() {
+function checkFirstName() {
     const first_name = document.getElementById("first-Name").value.trim(); 
     const first_name_error = document.getElementById("firstName_error");
     const firstname_pattern = /^[A-Za-z]+$/;
@@ -19,7 +19,7 @@ function check_FirstName() {
 }
 // This function is used to check whether the user's last name is entered or not . By using onfocusout event and
 // retrieve the data  using the document by using the id and by using the regex to conform the pattern of the lastname
-function check_LastName()
+function checkLastName()
 {
     const last_name = document.getElementById("last_Name").value.trim();
     const last_Name = document.getElementById("last_name");
@@ -37,12 +37,12 @@ function check_LastName()
         last_Name.style.color = "green";
     } 
 }
-// This function is used to check whether the email id is entered or not .By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the regex to conform the pattern of the email id to be printed
-function check_Email() {
+/* This function is used to check whether the email id is entered or not .By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the regex to conform the pattern of the email id to be printed*/
+function checkEmail() {
     const email_id = document.getElementById("email").value.trim();
     const email_error = document.getElementById("label_email");
-    const email_pattern = /[a-zA-Z0-9{3,7}[@]{1}[.]{1}com/;
+    const email_pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (!email_id) {
         email_error.innerHTML = " Please enter a mail id";
         email_error.style.color = "orange";
@@ -56,15 +56,16 @@ function check_Email() {
         email_error.style.color = "green";
     }
 }
-// This function is used to check whether the phonenumber is entered or not . By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the regex
-// to conform the pattern of the phone number and length of the phonenumber and css styles to change the text and color.
-function check_PhoneNumber() {
+/* This function is used to check whether the phonenumber is entered or not . By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the regex
+ to conform the pattern of the phone number and length of the phonenumber and css styles to change the text and color.*/
+function checkPhoneNumber() {
     const phone_number = document.getElementById("mobileNumber").value.trim();
     const pattern_number = /[6-9]\d{9}$/;
     if (!phone_number) {
         document.getElementById("error_message").textContent = "Phone number must be filled";
         document.getElementById("error_message").style.color = "orange";
+        
     }
     else if (phone_number.length != 10) {
         document.getElementById("error_message").textContent = "Phone number must contain 10 digits";
@@ -76,11 +77,12 @@ function check_PhoneNumber() {
     }
     else {
         document.getElementById("error_message").textContent = " ";
+        
     }
   }
-// This function is used to check whether the company name is entered or not .By using onfocusout event and
-// retrieve the data  using the document by using the id and using the css styles to change the color and text.
-function check_CompanyName() {
+/* This function is used to check whether the company name is entered or not .By using onfocusout event and
+ retrieve the data  using the document by using the id and using the css styles to change the color and text.*/
+function checkCompanyName() {
     const company_name = document.getElementById("companyName").value.trim();
     if (!company_name) {
         document.getElementById("company_error").innerHTML = "Company name is required";
@@ -91,9 +93,9 @@ function check_CompanyName() {
         document.getElementById("company_error").style.color = "green ";
     }
 }
-// This function is used to check whether the address is entered or not. By using onfocusout event and
-// retrieve the data  using the document by using the id and by change the text by styles and innerText.
-function check_Address() {
+/* This function is used to check whether the address is entered or not. By using onfocusout event and
+ retrieve the data  using the document by using the id and by change the text by styles and innerText.*/
+function checkAddress() {
     const address = document.getElementById("userAddress").value.trim();
     if (!address) {
         document.getElementById("address_error").innerHTML = "Address is mandatory";
@@ -105,9 +107,9 @@ function check_Address() {
 
     }
 }
-// This function is used to check whether the city name of the username is entered or not by using onfocusout event and
-// retrieve the data  using the document by using the id and by using innerhtml and color for highlighting the error message.
-function check_CityName() {
+/* This function is used to check whether the city name of the username is entered or not by using onfocusout event and
+ retrieve the data  using the document by using the id and by using innerhtml and color for highlighting the error message.*/
+function checkCityName() {
     const city = document.getElementById("cityName").value.trim();
     if (!city) {
         document.getElementById("error_city").innerHTML = "Enter the city Name ";
@@ -118,9 +120,9 @@ function check_CityName() {
         document.getElementById("error_city").style.color = "green";
     }
 }
-// This function is used to check whether the user state  is entered or not . By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.
-function check_StateName() {
+/* This function is used to check whether the user state  is entered or not . By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.*/
+function checkStateName() {
     const state = document.getElementById("state_province").value.trim();
     if (!state) {
         document.getElementById("label-state").innerHTML = "City must be entered";
@@ -131,9 +133,9 @@ function check_StateName() {
         document.getElementById("label-state").style.color = "green";
     }
 }
-// This function is used to check whether the postal code  is entered or not . By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.
-function check_ZipCode() {
+/* This function is used to check whether the postal code  is entered or not . By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.*/
+function checkZipCode() {
     const postal_code = document.getElementById("postalCode").value.trim();
     
     if (!postal_code) {
@@ -149,9 +151,9 @@ function check_ZipCode() {
         document.getElementById("zipCode_error").style.color = "green";
     }
 }
-// This function is used to check whether the user country name is entered or not . By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.
-function check_CountryName() {
+/* This function is used to check whether the user country name is entered or not . By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.*/
+function checkCountryName() {
     const country = document.getElementById("country").value.trim();
     if (!country) {
         document.getElementById("label-country").innerHTML = "Enter the country name ";
@@ -162,9 +164,9 @@ function check_CountryName() {
         document.getElementById("label-country").style.color = "green";
     }
 }
-// This function is used to check whether the quantity of is entered or not . By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages. 
-function check_Quantity() {
+/* This function is used to check whether the quantity of is entered or not . By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages. */
+function checkQuantity() {
     const quantity = document.getElementById("quantity_input").value.trim();
     if (!quantity) {
         document.getElementById("error_quantity").innerHTML = " Enter the quantity";
@@ -175,9 +177,9 @@ function check_Quantity() {
         document.getElementById("error_quantity").style.color = " green ";
     }
 }
-// This function is used to check whether the count is entered or not . By using onfocusout event and
-// retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.
-function check_Count() {
+/* This function is used to check whether the count is entered or not . By using onfocusout event and
+ retrieve the data  using the document by using the id and by using the innerhtml and color to highlight the error messages.*/
+function checkCount() {
     const total = document.getElementById("total-Count").value.trim();
     if (!total) {
         document.getElementById("count_error").innerHTML = " Total count missing";
@@ -188,10 +190,10 @@ function check_Count() {
         document.getElementById("count_error").style.color = " green ";
     }
 }
-// This function is used to check whether the user
-// select  any of the given option and if user doesn't select any option it will not let the form to submit and in here i used to group
-// the inputs in the form of loop and retriving them and used the checked function 
-function validate_HeardAbout() {
+/* This function is used to check whether the user
+ select  any of the given option and if user doesn't select any option it will not let the form to submit and in here i used to group
+ the inputs in the form of loop and retriving them and used the checked function */
+function validateHeardAbout() {
     let check = false;
     const info = document.querySelectorAll('input[name="info"]');
     for (let infos of info) {
@@ -209,7 +211,7 @@ function validate_HeardAbout() {
 document.getElementById('formSubmit').addEventListener('click', stopSubmit)
 function stopSubmit(event) {
     event.preventDefault();
-    if (validate_HeardAbout()) {
+    if (validateHeardAbout()) {
         alert("sucess");
     }
    
