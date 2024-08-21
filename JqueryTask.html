@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="JqueryTask.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header_class">
+            <p>Welcome Back!</p>
+            <p>Login to your account</p>
+        </div>
+        <form action="#" method="post" id="loginForm">
+            <div class="form_group">
+                <div class="email_group">
+                    <label class="label-email"for="email">Email  Address :</label>
+                    <input type="email" name="email" class="email-input" />
+                    <small class="emailError"></small>
+                </div>
+                <div class="password_group">
+                    <label class="label-passkey" for="passKey">Password</label>
+                    <input type="password" name="passKey" class="passKey-input" />
+                    <small class="passKey-Error"></small>
+                </div>
+                <div class="verify_group">
+                    <input type="radio" name="remember_me" placeholder="Remember me" class="radio_class"/>
+                    <label for="remember_me">Remember me</label>
+                    <a href="#" class="anchor-link">Forgotten Password!</a>
+                </div>
+                <div>
+                    <input  type="submit" value="Submit" class="submit_button"/>
+                </div>
+                <div class="sign_up">
+                    Don't have account ? <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="JqueryTask.js"></script>
+</body>
+</html>

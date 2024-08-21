@@ -1,0 +1,71 @@
+﻿.header_class {
+    display: block;
+    padding:10px;
+    color:chocolate;
+    font-weight:600;
+    font-size : large;
+    text-align:center;
+   
+}
+.container {
+    margin: 50px auto 0px;
+    background-color: rgba(182, 255, 0,.5);
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    width: 600px;
+    height: 400px;
+    box-shadow: inset;
+}
+.email_group {
+    padding: 10px;
+}
+.label-email {
+    display: block;
+    text-align: left;
+    font-weight: 200;
+}
+.email-input {
+    width: 50%;
+    color: black;
+    outline: none;
+    border-radius: 2px;
+}
+.password_group {
+   
+    padding: 10px;
+}
+.passKey-input {
+    width: 50%;
+    color: black;
+    outline: none;
+    border-radius:2px;
+}
+.label-passkey {
+    display: block;
+    text-align: left;
+    font-weight: 200;
+}
+.verify_group{
+    display : inline-block;
+    margin-top:20px;
+}
+
+.submit_button
+{
+    padding:5px;
+    margin:20px 0px 0px 30px;
+    background-color:darkgrey;
+    border-radius:10px;
+}
+.sign_up{
+    margin-top:20px;
+}
+.errorInput{
+    color:brown;
+    font-size:larger;
+}
+.correctInput{
+    color:green ;
+    font-size:larger;
+}
