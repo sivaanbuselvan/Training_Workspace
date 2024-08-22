@@ -1,0 +1,134 @@
+﻿.container
+{
+  width : 700px;
+  border:5px solid black;
+  display:grid;
+  border-radius:20px;
+  overflow:hidden;
+  grid-template-columns:1fr;
+  padding-bottom: 20px;
+  margin: 30px auto 0px;
+  background-color:#1D3557;
+}
+.headerClass{
+    background-color:#CCD5AE;
+    text-align:center;
+    padding:10px;
+    font-size:20px;
+    color: black;
+ }
+.footerDivision {
+    color:white;
+    padding : 5px;
+    margin-top:5px;
+}
+.submitDivision{
+    padding:10px;
+}
+.backButton{
+    width:70px;
+    outline:none;
+    height:30px;
+    cursor:pointer;
+    border:none;
+    border-radius:10px;
+    background-color:cyan;
+    margin-top:30px;
+}.container input{
+     border:hidden;
+     border-radius:10px;
+     height:20px;
+}
+.backButton:active{
+    box-shadow: 0 5px;
+    transform: translateY(5px);
+}
+.signUpButton {
+    width: 70px;
+    outline: none;
+    cursor: pointer;
+    height:30px;
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+    margin-top: 20px;
+}
+.signUpButton:active {
+    box-shadow: 0 5px;
+    transform: translateY(5px);
+}
+.personalInformation {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 2fr;
+    padding: 10px;
+    row-gap: 15px;
+}
+.radioDivision {
+    display: flex;
+    justify-content: start;
+    
+}
+.contactInfo{
+    padding:10px;
+    display:block;
+}
+.addressInformations {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    font-size: 20px;
+}
+.address-box {
+    margin-top:-20px;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+#cityLabel {
+    margin-top:20px;
+}
+.accountInformation {
+    display:grid;
+}
+#state {
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+#city {
+    margin-top:10px;
+    height:30px;
+    border-radius: 10px;
+    width: 100%;
+}
+.contactInformations {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 2fr;
+    padding: 10px;
+    row-gap: 15px;
+}
+.accountInformation {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 2fr;
+    padding: 10px;
+    row-gap: 15px;
+}
+#registerForm{
+    color:white;
+}
+.errorInput{
+    color:red;
+}
+.correctInput{
+    color:greenyellow;
+}
+#address {
+    margin-top: 15px;
+}
