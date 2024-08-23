@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   
+
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({ maxDate: new Date("2006-12-31") });
+        });
+        $(document).ready(function () {
+            $(".demo").slick();
+        });
+    </script>
+   
+</head>
+<body>
+    <label>Date</label>
+    <input type="text" id="datepicker"/>
+   
+
+</body>
+</html>
