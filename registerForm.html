@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="registerForm.css" />
+  
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -15,30 +17,38 @@
         </div>
         <form id="registerForm" action="#" method="post">
             <div class="personalInformation">
-                <label for="firstName"> First Name :</label>
+                <label for="firstName"> First name :</label>
                 <input type="text" name="firstName" id="firstName" />
                 <small id="errorFirstName"></small>
-                <label for="lastName"> Last Name :</label>
+                <label for="lastName"> Last name :</label>
                 <input type="text" name="lastName" id="lastName" />
                 <small id="errorLastName"></small>
-                <label for="birthDate">Date Of Birth : </label>
-                <input type="date" name="birthDate" id="birthDate" max="2006-12-31"/>
+                <label for="birthDate">Date of birth : </label>
+                <input type="date" id="birthDate" name="birthDate" max="2006-12-31"/>
                 <small id="errorBirthDate"></small>
                 <div class="radioDivision">
-                    <label for="gender" class="labelGroup">Gender :</label>
-                    <input type="radio" name="gender" value="male" class="inputGroup" />
-                    <label class="labelGroup">male</label>
-                    <input type="radio" name="gender" value="female" class="inputGroup" />
-                    <label class="labelGroup">female</label>
-                    <input type="radio" name="gender" value="other" class="inputGroup" />
-                    <label class="labelGroup">others</label>
+
+                    <label for="gender">Gender :</label>
+                    <div>
+                        <input type="radio" name="gender" value="male" />
+                        <label>male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="female" />
+                        <label class="labelGroup">female</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="female" />
+                        <label class="labelGroup">others</label>
+                    </div>
+                    <small id="genderError"></small>
                 </div>
-            </div>
+             </div>
             <div class="contactInformations">
-                <label for="phoneNumber">Phone Number :</label>
+                <label for="phoneNumber">Phone number :</label>
                 <input type="number" name="phoneNUmber" id="phoneNumber"/>
                 <small id="phoneNumberError"></small>
-                <label for="mailId" id="mailLabel"> Email Address :</label>
+                <label for="mailId" id="mailLabel"> Email address :</label>
                 <input type="email" name="mailId" id="mailId"/>
                 <small id="emailError"></small>
             </div>
@@ -450,7 +460,7 @@
                 </div>
             </div>
             <div class="accountInformation">
-                <label for="userName">Username</label>
+                <label for="userName">User name</label>
                 <input type="text" name="userName" id="userName"/>
                 <small id="errorUserName"></small>
                 <label for="password">Password</label>
@@ -461,11 +471,12 @@
                 <small id="passkeyError"></small>
             </div>
             <div class="submitDivision">
-                <button  type="submit" class="signUpButton">Sign up</button>
+                <button  type="button" class="signUpButton">Sign up</button>
+                <p id="allInputError"></p>
             </div>
         </form>
         <div class="footerDivision">
-            Already have an account ? <a href="Jquerytask.html">Log in</a>
+            Already have an account ? <a href="Jquerytask.html" id="linkTag">Sign in</a>
            <div>
             <button class="backButton">Back</button>
           </div>
