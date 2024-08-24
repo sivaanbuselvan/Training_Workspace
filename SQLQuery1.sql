@@ -1,0 +1,8 @@
+ INSERT INTO Employee 
+ VALUES(123,'Selva',15000.00, '2000-05-20' );
+
+ INSERT INTO Employee 
+ VALUES(124,'Anbu',12000.00, '2000-07-24' );
+
+ INSERT INTO Employee
+ VALUES(122,'George',10000.00, '2000-05-20' );
